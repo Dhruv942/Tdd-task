@@ -17,3 +17,6 @@ test("handles new lines between numbers '1\\n2,3' should return 6", () => {
 test("single number returns the number", () => {
   expect(add("2")).toBe(2);
 });
+test("custom delimiter returns sum of numbers", () => {
+  expect(add("//;\n1;2")).toBe(3);
+});
