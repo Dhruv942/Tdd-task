@@ -13,3 +13,7 @@ test("handles more than two numbers '1,2,3,4,5' should return 15", () => {
 test("handles new lines between numbers '1\\n2,3' should return 6", () => {
   expect(add("1\n2,3")).toBe(6);
 });
+
+test("single number returns the number", () => {
+  expect(add("2")).toBe(2);
+});
