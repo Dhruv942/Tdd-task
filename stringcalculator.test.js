@@ -20,3 +20,8 @@ test("single number returns the number", () => {
 test("custom delimiter returns sum of numbers", () => {
   expect(add("//;\n1;2")).toBe(3);
 });
+test("negative numbers throw an error", () => {
+  expect(() => add("1,-2,-23")).toThrow(
+    "negative numbers not allowed: -2, -23"
+  );
+});

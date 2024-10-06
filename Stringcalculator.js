@@ -9,6 +9,7 @@ function add(numbers) {
   numbers = numbers.replace(/\n/g, delimiter);
 
   let nums = numbers.split(delimiter).map(Number);
+
   let sum = 0;
   for (let i = 0; i < nums.length; i++) {
     sum += nums[i];
