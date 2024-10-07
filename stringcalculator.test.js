@@ -27,3 +27,7 @@ test("negative numbers throw an error", () => {
 test(" multiple negative numbers throw an error", () => {
   expect(() => add("1,-2,-3")).toThrow("negative numbers not allowed: -2, -3");
 });
+
+test("ingore number bigger than 1000 ", () => {
+  expect(add("1,1001,1002,5")).toBe(6);
+});
